@@ -98,6 +98,13 @@ p {
   color: var(--dark);
 }
 
+/* Logo */
+.logo img {
+  height: 200px;
+  width: auto;
+  display: block;
+}
+
 .nav {
   display: flex;
   gap: 1.5rem;
@@ -232,6 +239,10 @@ p {
    MOBILE NAV TWEAK
 ============================= */
 @media (max-width: 768px) {
+  .logo img {
+    height: 40px; /* slightly smaller on mobile */
+  }
+
   .nav {
     gap: 1rem;
     font-size: 0.9rem;
