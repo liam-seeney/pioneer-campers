@@ -130,6 +130,7 @@ p {
   background: none;
   border: none;
   cursor: pointer;
+  align-self: center;
 }
 
 /* =============================
@@ -255,6 +256,10 @@ p {
    MOBILE NAV TWEAK
 ============================= */
 @media (max-width: 768px) {
+  .header-inner {
+    height: auto;
+  }
+
   .hamburger {
     display: block;
   }
@@ -266,7 +271,7 @@ p {
   .nav {
     position: absolute;
     right: 0;
-    top: 70px;
+    top: 100%;
     background: white;
     border-left: 1px solid #e5e7eb;
     border-bottom: 1px solid #e5e7eb;
