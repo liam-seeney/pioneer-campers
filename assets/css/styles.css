@@ -68,7 +68,7 @@ p {
 ============================= */
 :root {
   --dark: #111827;
-  --green: #2f5d50;
+  --green: #5ba089;
   --light: #f3f4f6;
   --accent: #d4a373;
 }
@@ -116,6 +116,10 @@ p {
   font-weight: 500;
 }
 
+.nav .btn-primary {
+  color: white;
+}
+
 /* =============================
    HAMBURGER
 ============================= */
@@ -144,7 +148,8 @@ p {
 }
 
 .btn-primary:hover {
-  opacity: 0.9;
+  background: #4f9580;
+  opacity: 1;
 }
 
 /* =============================
