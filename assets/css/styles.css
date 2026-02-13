@@ -1,0 +1,243 @@
+/* =============================
+   RESET / BASE
+============================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Ubuntu,
+    sans-serif;
+  line-height: 1.6;
+  color: #1f2933;
+  background: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =============================
+   LAYOUT
+============================= */
+.container {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  max-width: 650px;
+  margin-top: 1rem;
+  color: #4b5563;
+}
+
+/* =============================
+   COLOURS (easy to change)
+============================= */
+:root {
+  --dark: #111827;
+  --green: #2f5d50;
+  --light: #f3f4f6;
+  --accent: #d4a373;
+}
+
+/* =============================
+   HEADER
+============================= */
+.site-header {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo a {
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+/* =============================
+   BUTTONS
+============================= */
+.btn {
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--green);
+  color: white;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* =============================
+   HERO
+============================= */
+.hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../images/hero/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 8rem 0;
+}
+
+.hero-inner {
+  max-width: 700px;
+}
+
+.hero p {
+  color: #e5e7eb;
+  margin-bottom: 1.5rem;
+}
+
+/* =============================
+   INTRO
+============================= */
+.intro {
+  background: var(--light);
+}
+
+/* =============================
+   BUILDS
+============================= */
+.build-grid {
+  margin-top: 2rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.build-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.build-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.image-placeholder {
+  height: 180px;
+  background: #d1d5db;
+}
+
+.build-card h3,
+.build-card p {
+  padding: 0 1rem;
+}
+
+.build-card h3 {
+  margin-top: 1rem;
+}
+
+/* =============================
+   PROCESS
+============================= */
+.process {
+  background: var(--light);
+}
+
+/* =============================
+   CONTACT
+============================= */
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =============================
+   FOOTER
+============================= */
+.site-footer {
+  border-top: 1px solid #e5e7eb;
+  padding: 2rem 0;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* =============================
+   MOBILE NAV TWEAK
+============================= */
+@media (max-width: 768px) {
+  .nav {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 3.5rem 0;
+  }
+}
